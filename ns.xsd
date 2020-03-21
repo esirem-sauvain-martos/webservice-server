@@ -65,7 +65,7 @@
     <element name="get-memory-availableResponse">
       <complexType>
           <sequence>
-            <element name="available" type="xsd:float" minOccurs="1" maxOccurs="1"/><!-- ns__get_memory_available::available -->
+            <element name="available" type="xsd:int" minOccurs="1" maxOccurs="1"/><!-- ns__get_memory_available::available -->
           </sequence>
       </complexType>
     </element>
@@ -80,7 +80,7 @@
     <element name="get-memory-freeResponse">
       <complexType>
           <sequence>
-            <element name="free" type="xsd:float" minOccurs="1" maxOccurs="1"/><!-- ns__get_memory_free::free -->
+            <element name="free" type="xsd:int" minOccurs="1" maxOccurs="1"/><!-- ns__get_memory_free::free -->
           </sequence>
       </complexType>
     </element>

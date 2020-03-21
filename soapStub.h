@@ -168,12 +168,12 @@ struct SOAP_CMAC ns__get_memory_info {
 
 /* networkManagement.hpp:9 */
 #ifndef SOAP_TYPE_ns__get_memory_availableResponse
-#define SOAP_TYPE_ns__get_memory_availableResponse (21)
+#define SOAP_TYPE_ns__get_memory_availableResponse (22)
 /* complex XML schema type 'ns:get-memory-availableResponse': */
 struct SOAP_CMAC ns__get_memory_availableResponse {
       public:
-        /** Required element 'available' of XML schema type 'xsd:float' */
-        float available;
+        /** Required element 'available' of XML schema type 'xsd:int' */
+        int available;
       public:
         /** Return unique type id SOAP_TYPE_ns__get_memory_availableResponse */
         long soap_type() const { return SOAP_TYPE_ns__get_memory_availableResponse; }
@@ -186,7 +186,7 @@ struct SOAP_CMAC ns__get_memory_availableResponse {
 
 /* networkManagement.hpp:9 */
 #ifndef SOAP_TYPE_ns__get_memory_available
-#define SOAP_TYPE_ns__get_memory_available (22)
+#define SOAP_TYPE_ns__get_memory_available (23)
 /* complex XML schema type 'ns:get-memory-available': */
 struct SOAP_CMAC ns__get_memory_available {
       public:
@@ -201,12 +201,12 @@ struct SOAP_CMAC ns__get_memory_available {
 
 /* networkManagement.hpp:10 */
 #ifndef SOAP_TYPE_ns__get_memory_freeResponse
-#define SOAP_TYPE_ns__get_memory_freeResponse (24)
+#define SOAP_TYPE_ns__get_memory_freeResponse (25)
 /* complex XML schema type 'ns:get-memory-freeResponse': */
 struct SOAP_CMAC ns__get_memory_freeResponse {
       public:
-        /** Required element 'free' of XML schema type 'xsd:float' */
-        float free;
+        /** Required element 'free' of XML schema type 'xsd:int' */
+        int free;
       public:
         /** Return unique type id SOAP_TYPE_ns__get_memory_freeResponse */
         long soap_type() const { return SOAP_TYPE_ns__get_memory_freeResponse; }
@@ -219,7 +219,7 @@ struct SOAP_CMAC ns__get_memory_freeResponse {
 
 /* networkManagement.hpp:10 */
 #ifndef SOAP_TYPE_ns__get_memory_free
-#define SOAP_TYPE_ns__get_memory_free (25)
+#define SOAP_TYPE_ns__get_memory_free (26)
 /* complex XML schema type 'ns:get-memory-free': */
 struct SOAP_CMAC ns__get_memory_free {
       public:
@@ -234,7 +234,7 @@ struct SOAP_CMAC ns__get_memory_free {
 
 /* networkManagement.hpp:13 */
 #ifndef SOAP_TYPE_ns__get_drive_numberResponse
-#define SOAP_TYPE_ns__get_drive_numberResponse (29)
+#define SOAP_TYPE_ns__get_drive_numberResponse (30)
 /* complex XML schema type 'ns:get-drive-numberResponse': */
 struct SOAP_CMAC ns__get_drive_numberResponse {
       public:
@@ -252,7 +252,7 @@ struct SOAP_CMAC ns__get_drive_numberResponse {
 
 /* networkManagement.hpp:13 */
 #ifndef SOAP_TYPE_ns__get_drive_number
-#define SOAP_TYPE_ns__get_drive_number (30)
+#define SOAP_TYPE_ns__get_drive_number (31)
 /* complex XML schema type 'ns:get-drive-number': */
 struct SOAP_CMAC ns__get_drive_number {
       public:
@@ -267,7 +267,7 @@ struct SOAP_CMAC ns__get_drive_number {
 
 /* networkManagement.hpp:14 */
 #ifndef SOAP_TYPE_ns__get_drive_namesResponse
-#define SOAP_TYPE_ns__get_drive_namesResponse (33)
+#define SOAP_TYPE_ns__get_drive_namesResponse (34)
 /* complex XML schema type 'ns:get-drive-namesResponse': */
 struct SOAP_CMAC ns__get_drive_namesResponse {
       public:
@@ -285,7 +285,7 @@ struct SOAP_CMAC ns__get_drive_namesResponse {
 
 /* networkManagement.hpp:14 */
 #ifndef SOAP_TYPE_ns__get_drive_names
-#define SOAP_TYPE_ns__get_drive_names (34)
+#define SOAP_TYPE_ns__get_drive_names (35)
 /* complex XML schema type 'ns:get-drive-names': */
 struct SOAP_CMAC ns__get_drive_names {
       public:
@@ -300,7 +300,7 @@ struct SOAP_CMAC ns__get_drive_names {
 
 /* networkManagement.hpp:15 */
 #ifndef SOAP_TYPE_ns__get_drive_infoResponse
-#define SOAP_TYPE_ns__get_drive_infoResponse (36)
+#define SOAP_TYPE_ns__get_drive_infoResponse (37)
 /* complex XML schema type 'ns:get-drive-infoResponse': */
 struct SOAP_CMAC ns__get_drive_infoResponse {
       public:
@@ -318,7 +318,7 @@ struct SOAP_CMAC ns__get_drive_infoResponse {
 
 /* networkManagement.hpp:15 */
 #ifndef SOAP_TYPE_ns__get_drive_info
-#define SOAP_TYPE_ns__get_drive_info (37)
+#define SOAP_TYPE_ns__get_drive_info (38)
 /* complex XML schema type 'ns:get-drive-info': */
 struct SOAP_CMAC ns__get_drive_info {
       public:
@@ -336,7 +336,7 @@ struct SOAP_CMAC ns__get_drive_info {
 
 /* networkManagement.hpp:16 */
 #ifndef SOAP_TYPE_ns__get_drive_total_capacityResponse
-#define SOAP_TYPE_ns__get_drive_total_capacityResponse (39)
+#define SOAP_TYPE_ns__get_drive_total_capacityResponse (40)
 /* complex XML schema type 'ns:get-drive-total-capacityResponse': */
 struct SOAP_CMAC ns__get_drive_total_capacityResponse {
       public:
@@ -354,7 +354,7 @@ struct SOAP_CMAC ns__get_drive_total_capacityResponse {
 
 /* networkManagement.hpp:16 */
 #ifndef SOAP_TYPE_ns__get_drive_total_capacity
-#define SOAP_TYPE_ns__get_drive_total_capacity (40)
+#define SOAP_TYPE_ns__get_drive_total_capacity (41)
 /* complex XML schema type 'ns:get-drive-total-capacity': */
 struct SOAP_CMAC ns__get_drive_total_capacity {
       public:
@@ -372,7 +372,7 @@ struct SOAP_CMAC ns__get_drive_total_capacity {
 
 /* networkManagement.hpp:17 */
 #ifndef SOAP_TYPE_ns__get_drive_used_capatityResponse
-#define SOAP_TYPE_ns__get_drive_used_capatityResponse (42)
+#define SOAP_TYPE_ns__get_drive_used_capatityResponse (43)
 /* complex XML schema type 'ns:get-drive-used-capatityResponse': */
 struct SOAP_CMAC ns__get_drive_used_capatityResponse {
       public:
@@ -390,7 +390,7 @@ struct SOAP_CMAC ns__get_drive_used_capatityResponse {
 
 /* networkManagement.hpp:17 */
 #ifndef SOAP_TYPE_ns__get_drive_used_capatity
-#define SOAP_TYPE_ns__get_drive_used_capatity (43)
+#define SOAP_TYPE_ns__get_drive_used_capatity (44)
 /* complex XML schema type 'ns:get-drive-used-capatity': */
 struct SOAP_CMAC ns__get_drive_used_capatity {
       public:
@@ -408,7 +408,7 @@ struct SOAP_CMAC ns__get_drive_used_capatity {
 
 /* networkManagement.hpp:20 */
 #ifndef SOAP_TYPE_ns__get_interface_numberResponse
-#define SOAP_TYPE_ns__get_interface_numberResponse (45)
+#define SOAP_TYPE_ns__get_interface_numberResponse (46)
 /* complex XML schema type 'ns:get-interface-numberResponse': */
 struct SOAP_CMAC ns__get_interface_numberResponse {
       public:
@@ -426,7 +426,7 @@ struct SOAP_CMAC ns__get_interface_numberResponse {
 
 /* networkManagement.hpp:20 */
 #ifndef SOAP_TYPE_ns__get_interface_number
-#define SOAP_TYPE_ns__get_interface_number (46)
+#define SOAP_TYPE_ns__get_interface_number (47)
 /* complex XML schema type 'ns:get-interface-number': */
 struct SOAP_CMAC ns__get_interface_number {
       public:
@@ -441,7 +441,7 @@ struct SOAP_CMAC ns__get_interface_number {
 
 /* networkManagement.hpp:21 */
 #ifndef SOAP_TYPE_ns__get_interface_namesResponse
-#define SOAP_TYPE_ns__get_interface_namesResponse (48)
+#define SOAP_TYPE_ns__get_interface_namesResponse (49)
 /* complex XML schema type 'ns:get-interface-namesResponse': */
 struct SOAP_CMAC ns__get_interface_namesResponse {
       public:
@@ -459,7 +459,7 @@ struct SOAP_CMAC ns__get_interface_namesResponse {
 
 /* networkManagement.hpp:21 */
 #ifndef SOAP_TYPE_ns__get_interface_names
-#define SOAP_TYPE_ns__get_interface_names (49)
+#define SOAP_TYPE_ns__get_interface_names (50)
 /* complex XML schema type 'ns:get-interface-names': */
 struct SOAP_CMAC ns__get_interface_names {
       public:
@@ -474,7 +474,7 @@ struct SOAP_CMAC ns__get_interface_names {
 
 /* networkManagement.hpp:22 */
 #ifndef SOAP_TYPE_ns__get_interface_infoResponse
-#define SOAP_TYPE_ns__get_interface_infoResponse (51)
+#define SOAP_TYPE_ns__get_interface_infoResponse (52)
 /* complex XML schema type 'ns:get-interface-infoResponse': */
 struct SOAP_CMAC ns__get_interface_infoResponse {
       public:
@@ -492,7 +492,7 @@ struct SOAP_CMAC ns__get_interface_infoResponse {
 
 /* networkManagement.hpp:22 */
 #ifndef SOAP_TYPE_ns__get_interface_info
-#define SOAP_TYPE_ns__get_interface_info (52)
+#define SOAP_TYPE_ns__get_interface_info (53)
 /* complex XML schema type 'ns:get-interface-info': */
 struct SOAP_CMAC ns__get_interface_info {
       public:
@@ -510,7 +510,7 @@ struct SOAP_CMAC ns__get_interface_info {
 
 /* networkManagement.hpp:23 */
 #ifndef SOAP_TYPE_ns__get_interface_ip_addressResponse
-#define SOAP_TYPE_ns__get_interface_ip_addressResponse (54)
+#define SOAP_TYPE_ns__get_interface_ip_addressResponse (55)
 /* complex XML schema type 'ns:get-interface-ip-addressResponse': */
 struct SOAP_CMAC ns__get_interface_ip_addressResponse {
       public:
@@ -528,7 +528,7 @@ struct SOAP_CMAC ns__get_interface_ip_addressResponse {
 
 /* networkManagement.hpp:23 */
 #ifndef SOAP_TYPE_ns__get_interface_ip_address
-#define SOAP_TYPE_ns__get_interface_ip_address (55)
+#define SOAP_TYPE_ns__get_interface_ip_address (56)
 /* complex XML schema type 'ns:get-interface-ip-address': */
 struct SOAP_CMAC ns__get_interface_ip_address {
       public:
@@ -782,7 +782,7 @@ typedef char *_QName;
 
 /* unsigned int has binding name 'unsignedInt' for type 'xsd:unsignedInt' */
 #ifndef SOAP_TYPE_unsignedInt
-#define SOAP_TYPE_unsignedInt (26)
+#define SOAP_TYPE_unsignedInt (27)
 #endif
 
 /* std::string has binding name 'std__string' for type 'xsd:string' */
@@ -837,112 +837,112 @@ typedef char *_QName;
 
 /* struct ns__get_interface_ip_address has binding name 'ns__get_interface_ip_address' for type 'ns:get-interface-ip-address' */
 #ifndef SOAP_TYPE_ns__get_interface_ip_address
-#define SOAP_TYPE_ns__get_interface_ip_address (55)
+#define SOAP_TYPE_ns__get_interface_ip_address (56)
 #endif
 
 /* struct ns__get_interface_ip_addressResponse has binding name 'ns__get_interface_ip_addressResponse' for type 'ns:get-interface-ip-addressResponse' */
 #ifndef SOAP_TYPE_ns__get_interface_ip_addressResponse
-#define SOAP_TYPE_ns__get_interface_ip_addressResponse (54)
+#define SOAP_TYPE_ns__get_interface_ip_addressResponse (55)
 #endif
 
 /* struct ns__get_interface_info has binding name 'ns__get_interface_info' for type 'ns:get-interface-info' */
 #ifndef SOAP_TYPE_ns__get_interface_info
-#define SOAP_TYPE_ns__get_interface_info (52)
+#define SOAP_TYPE_ns__get_interface_info (53)
 #endif
 
 /* struct ns__get_interface_infoResponse has binding name 'ns__get_interface_infoResponse' for type 'ns:get-interface-infoResponse' */
 #ifndef SOAP_TYPE_ns__get_interface_infoResponse
-#define SOAP_TYPE_ns__get_interface_infoResponse (51)
+#define SOAP_TYPE_ns__get_interface_infoResponse (52)
 #endif
 
 /* struct ns__get_interface_names has binding name 'ns__get_interface_names' for type 'ns:get-interface-names' */
 #ifndef SOAP_TYPE_ns__get_interface_names
-#define SOAP_TYPE_ns__get_interface_names (49)
+#define SOAP_TYPE_ns__get_interface_names (50)
 #endif
 
 /* struct ns__get_interface_namesResponse has binding name 'ns__get_interface_namesResponse' for type 'ns:get-interface-namesResponse' */
 #ifndef SOAP_TYPE_ns__get_interface_namesResponse
-#define SOAP_TYPE_ns__get_interface_namesResponse (48)
+#define SOAP_TYPE_ns__get_interface_namesResponse (49)
 #endif
 
 /* struct ns__get_interface_number has binding name 'ns__get_interface_number' for type 'ns:get-interface-number' */
 #ifndef SOAP_TYPE_ns__get_interface_number
-#define SOAP_TYPE_ns__get_interface_number (46)
+#define SOAP_TYPE_ns__get_interface_number (47)
 #endif
 
 /* struct ns__get_interface_numberResponse has binding name 'ns__get_interface_numberResponse' for type 'ns:get-interface-numberResponse' */
 #ifndef SOAP_TYPE_ns__get_interface_numberResponse
-#define SOAP_TYPE_ns__get_interface_numberResponse (45)
+#define SOAP_TYPE_ns__get_interface_numberResponse (46)
 #endif
 
 /* struct ns__get_drive_used_capatity has binding name 'ns__get_drive_used_capatity' for type 'ns:get-drive-used-capatity' */
 #ifndef SOAP_TYPE_ns__get_drive_used_capatity
-#define SOAP_TYPE_ns__get_drive_used_capatity (43)
+#define SOAP_TYPE_ns__get_drive_used_capatity (44)
 #endif
 
 /* struct ns__get_drive_used_capatityResponse has binding name 'ns__get_drive_used_capatityResponse' for type 'ns:get-drive-used-capatityResponse' */
 #ifndef SOAP_TYPE_ns__get_drive_used_capatityResponse
-#define SOAP_TYPE_ns__get_drive_used_capatityResponse (42)
+#define SOAP_TYPE_ns__get_drive_used_capatityResponse (43)
 #endif
 
 /* struct ns__get_drive_total_capacity has binding name 'ns__get_drive_total_capacity' for type 'ns:get-drive-total-capacity' */
 #ifndef SOAP_TYPE_ns__get_drive_total_capacity
-#define SOAP_TYPE_ns__get_drive_total_capacity (40)
+#define SOAP_TYPE_ns__get_drive_total_capacity (41)
 #endif
 
 /* struct ns__get_drive_total_capacityResponse has binding name 'ns__get_drive_total_capacityResponse' for type 'ns:get-drive-total-capacityResponse' */
 #ifndef SOAP_TYPE_ns__get_drive_total_capacityResponse
-#define SOAP_TYPE_ns__get_drive_total_capacityResponse (39)
+#define SOAP_TYPE_ns__get_drive_total_capacityResponse (40)
 #endif
 
 /* struct ns__get_drive_info has binding name 'ns__get_drive_info' for type 'ns:get-drive-info' */
 #ifndef SOAP_TYPE_ns__get_drive_info
-#define SOAP_TYPE_ns__get_drive_info (37)
+#define SOAP_TYPE_ns__get_drive_info (38)
 #endif
 
 /* struct ns__get_drive_infoResponse has binding name 'ns__get_drive_infoResponse' for type 'ns:get-drive-infoResponse' */
 #ifndef SOAP_TYPE_ns__get_drive_infoResponse
-#define SOAP_TYPE_ns__get_drive_infoResponse (36)
+#define SOAP_TYPE_ns__get_drive_infoResponse (37)
 #endif
 
 /* struct ns__get_drive_names has binding name 'ns__get_drive_names' for type 'ns:get-drive-names' */
 #ifndef SOAP_TYPE_ns__get_drive_names
-#define SOAP_TYPE_ns__get_drive_names (34)
+#define SOAP_TYPE_ns__get_drive_names (35)
 #endif
 
 /* struct ns__get_drive_namesResponse has binding name 'ns__get_drive_namesResponse' for type 'ns:get-drive-namesResponse' */
 #ifndef SOAP_TYPE_ns__get_drive_namesResponse
-#define SOAP_TYPE_ns__get_drive_namesResponse (33)
+#define SOAP_TYPE_ns__get_drive_namesResponse (34)
 #endif
 
 /* struct ns__get_drive_number has binding name 'ns__get_drive_number' for type 'ns:get-drive-number' */
 #ifndef SOAP_TYPE_ns__get_drive_number
-#define SOAP_TYPE_ns__get_drive_number (30)
+#define SOAP_TYPE_ns__get_drive_number (31)
 #endif
 
 /* struct ns__get_drive_numberResponse has binding name 'ns__get_drive_numberResponse' for type 'ns:get-drive-numberResponse' */
 #ifndef SOAP_TYPE_ns__get_drive_numberResponse
-#define SOAP_TYPE_ns__get_drive_numberResponse (29)
+#define SOAP_TYPE_ns__get_drive_numberResponse (30)
 #endif
 
 /* struct ns__get_memory_free has binding name 'ns__get_memory_free' for type 'ns:get-memory-free' */
 #ifndef SOAP_TYPE_ns__get_memory_free
-#define SOAP_TYPE_ns__get_memory_free (25)
+#define SOAP_TYPE_ns__get_memory_free (26)
 #endif
 
 /* struct ns__get_memory_freeResponse has binding name 'ns__get_memory_freeResponse' for type 'ns:get-memory-freeResponse' */
 #ifndef SOAP_TYPE_ns__get_memory_freeResponse
-#define SOAP_TYPE_ns__get_memory_freeResponse (24)
+#define SOAP_TYPE_ns__get_memory_freeResponse (25)
 #endif
 
 /* struct ns__get_memory_available has binding name 'ns__get_memory_available' for type 'ns:get-memory-available' */
 #ifndef SOAP_TYPE_ns__get_memory_available
-#define SOAP_TYPE_ns__get_memory_available (22)
+#define SOAP_TYPE_ns__get_memory_available (23)
 #endif
 
 /* struct ns__get_memory_availableResponse has binding name 'ns__get_memory_availableResponse' for type 'ns:get-memory-availableResponse' */
 #ifndef SOAP_TYPE_ns__get_memory_availableResponse
-#define SOAP_TYPE_ns__get_memory_availableResponse (21)
+#define SOAP_TYPE_ns__get_memory_availableResponse (22)
 #endif
 
 /* struct ns__get_memory_info has binding name 'ns__get_memory_info' for type 'ns:get-memory-info' */
@@ -992,7 +992,7 @@ typedef char *_QName;
 
 /* std::string * has binding name 'PointerTostd__string' for type 'xsd:string' */
 #ifndef SOAP_TYPE_PointerTostd__string
-#define SOAP_TYPE_PointerTostd__string (31)
+#define SOAP_TYPE_PointerTostd__string (32)
 #endif
 
 /* _QName has binding name '_QName' for type 'xsd:QName' */
@@ -1046,18 +1046,18 @@ typedef char *_QName;
     SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_memory_info(struct soap *soap, std::string &info);
     
     /** Web service synchronous operation 'soap_call_ns__get_memory_available' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_memory_available(struct soap *soap, const char *soap_endpoint, const char *soap_action, float &available);
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_memory_available(struct soap *soap, const char *soap_endpoint, const char *soap_action, int &available);
     /** Web service asynchronous operation 'soap_send_ns__get_memory_available' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
     SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__get_memory_available(struct soap *soap, const char *soap_endpoint, const char *soap_action);
     /** Web service asynchronous operation 'soap_recv_ns__get_memory_available' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_memory_available(struct soap *soap, float &available);
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_memory_available(struct soap *soap, int &available);
     
     /** Web service synchronous operation 'soap_call_ns__get_memory_free' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_memory_free(struct soap *soap, const char *soap_endpoint, const char *soap_action, float &free);
+    SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_memory_free(struct soap *soap, const char *soap_endpoint, const char *soap_action, int &free);
     /** Web service asynchronous operation 'soap_send_ns__get_memory_free' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
     SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__get_memory_free(struct soap *soap, const char *soap_endpoint, const char *soap_action);
     /** Web service asynchronous operation 'soap_recv_ns__get_memory_free' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_memory_free(struct soap *soap, float &free);
+    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_memory_free(struct soap *soap, int &free);
     
     /** Web service synchronous operation 'soap_call_ns__get_drive_number' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
     SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_drive_number(struct soap *soap, const char *soap_endpoint, const char *soap_action, unsigned int &number);
@@ -1150,9 +1150,9 @@ typedef char *_QName;
     /** Web service operation 'ns__get_memory_info' implementation, should return SOAP_OK or error code */
     SOAP_FMAC5 int SOAP_FMAC6 ns__get_memory_info(struct soap*, std::string &info);
     /** Web service operation 'ns__get_memory_available' implementation, should return SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 ns__get_memory_available(struct soap*, float &available);
+    SOAP_FMAC5 int SOAP_FMAC6 ns__get_memory_available(struct soap*, int &available);
     /** Web service operation 'ns__get_memory_free' implementation, should return SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 ns__get_memory_free(struct soap*, float &free);
+    SOAP_FMAC5 int SOAP_FMAC6 ns__get_memory_free(struct soap*, int &free);
     /** Web service operation 'ns__get_drive_number' implementation, should return SOAP_OK or error code */
     SOAP_FMAC5 int SOAP_FMAC6 ns__get_drive_number(struct soap*, unsigned int &number);
     /** Web service operation 'ns__get_drive_names' implementation, should return SOAP_OK or error code */

@@ -7,7 +7,7 @@
     xmlns:ns="http://tempuri.org/ns.xsd">
  <SOAP-ENV:Body>
   <ns:get-memory-availableResponse>
-   <available>0.0</available>
+   <available>0</available>
   </ns:get-memory-availableResponse>
  </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>

@@ -18,7 +18,7 @@ A commercial use license is available from Genivia Inc., contact@genivia.com
 
 #include "soapH.h"
 
-SOAP_SOURCE_STAMP("@(#) soapC.cpp ver 2.8.98 2020-03-21 19:15:26 GMT")
+SOAP_SOURCE_STAMP("@(#) soapC.cpp ver 2.8.98 2020-03-21 19:27:13 GMT")
 
 
 #ifndef WITH_NOGLOBAL
@@ -4610,7 +4610,7 @@ SOAP_FMAC3 struct ns__get_memory_free * SOAP_FMAC4 soap_get_ns__get_memory_free(
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_ns__get_memory_freeResponse(struct soap *soap, struct ns__get_memory_freeResponse *a)
 {
 	(void)soap; (void)a; /* appease -Wall -Werror */
-	soap_default_float(soap, &a->free);
+	soap_default_int(soap, &a->free);
 }
 
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_ns__get_memory_freeResponse(struct soap *soap, const struct ns__get_memory_freeResponse *a)
@@ -4625,7 +4625,7 @@ SOAP_FMAC3 int SOAP_FMAC4 soap_out_ns__get_memory_freeResponse(struct soap *soap
 	(void)soap; (void)tag; (void)id; (void)a; (void)type; /* appease -Wall -Werror */
 	if (soap_element_begin_out(soap, tag, soap_embedded_id(soap, id, a, SOAP_TYPE_ns__get_memory_freeResponse), type))
 		return soap->error;
-	if (soap_out_float(soap, "free", -1, &a->free, ""))
+	if (soap_out_int(soap, "free", -1, &a->free, ""))
 		return soap->error;
 	return soap_element_end_out(soap, tag);
 }
@@ -4645,7 +4645,7 @@ SOAP_FMAC3 struct ns__get_memory_freeResponse * SOAP_FMAC4 soap_in_ns__get_memor
 		for (;;)
 		{	soap->error = SOAP_TAG_MISMATCH;
 			if (soap_flag_free && soap->error == SOAP_TAG_MISMATCH)
-			{	if (soap_in_float(soap, "free", &a->free, "xsd:float"))
+			{	if (soap_in_int(soap, "free", &a->free, "xsd:int"))
 				{	soap_flag_free--;
 					continue;
 				}
@@ -4812,7 +4812,7 @@ SOAP_FMAC3 struct ns__get_memory_available * SOAP_FMAC4 soap_get_ns__get_memory_
 SOAP_FMAC3 void SOAP_FMAC4 soap_default_ns__get_memory_availableResponse(struct soap *soap, struct ns__get_memory_availableResponse *a)
 {
 	(void)soap; (void)a; /* appease -Wall -Werror */
-	soap_default_float(soap, &a->available);
+	soap_default_int(soap, &a->available);
 }
 
 SOAP_FMAC3 void SOAP_FMAC4 soap_serialize_ns__get_memory_availableResponse(struct soap *soap, const struct ns__get_memory_availableResponse *a)
@@ -4827,7 +4827,7 @@ SOAP_FMAC3 int SOAP_FMAC4 soap_out_ns__get_memory_availableResponse(struct soap 
 	(void)soap; (void)tag; (void)id; (void)a; (void)type; /* appease -Wall -Werror */
 	if (soap_element_begin_out(soap, tag, soap_embedded_id(soap, id, a, SOAP_TYPE_ns__get_memory_availableResponse), type))
 		return soap->error;
-	if (soap_out_float(soap, "available", -1, &a->available, ""))
+	if (soap_out_int(soap, "available", -1, &a->available, ""))
 		return soap->error;
 	return soap_element_end_out(soap, tag);
 }
@@ -4847,7 +4847,7 @@ SOAP_FMAC3 struct ns__get_memory_availableResponse * SOAP_FMAC4 soap_in_ns__get_
 		for (;;)
 		{	soap->error = SOAP_TAG_MISMATCH;
 			if (soap_flag_available && soap->error == SOAP_TAG_MISMATCH)
-			{	if (soap_in_float(soap, "available", &a->available, "xsd:float"))
+			{	if (soap_in_int(soap, "available", &a->available, "xsd:int"))
 				{	soap_flag_available--;
 					continue;
 				}

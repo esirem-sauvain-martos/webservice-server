@@ -3176,7 +3176,7 @@ inline struct ns__get_memory_freeResponse * soap_new_ns__get_memory_freeResponse
 
 inline struct ns__get_memory_freeResponse * soap_new_req_ns__get_memory_freeResponse(
 	struct soap *soap,
-	float free)
+	int free)
 {
 	struct ns__get_memory_freeResponse *_p = ::soap_new_ns__get_memory_freeResponse(soap);
 	if (_p)
@@ -3188,7 +3188,7 @@ inline struct ns__get_memory_freeResponse * soap_new_req_ns__get_memory_freeResp
 
 inline struct ns__get_memory_freeResponse * soap_new_set_ns__get_memory_freeResponse(
 	struct soap *soap,
-	float free)
+	int free)
 {
 	struct ns__get_memory_freeResponse *_p = ::soap_new_ns__get_memory_freeResponse(soap);
 	if (_p)
@@ -3364,7 +3364,7 @@ inline struct ns__get_memory_availableResponse * soap_new_ns__get_memory_availab
 
 inline struct ns__get_memory_availableResponse * soap_new_req_ns__get_memory_availableResponse(
 	struct soap *soap,
-	float available)
+	int available)
 {
 	struct ns__get_memory_availableResponse *_p = ::soap_new_ns__get_memory_availableResponse(soap);
 	if (_p)
@@ -3376,7 +3376,7 @@ inline struct ns__get_memory_availableResponse * soap_new_req_ns__get_memory_ava
 
 inline struct ns__get_memory_availableResponse * soap_new_set_ns__get_memory_availableResponse(
 	struct soap *soap,
-	float available)
+	int available)
 {
 	struct ns__get_memory_availableResponse *_p = ::soap_new_ns__get_memory_availableResponse(soap);
 	if (_p)

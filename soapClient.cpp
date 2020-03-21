@@ -17,7 +17,7 @@ A commercial use license is available from Genivia Inc., contact@genivia.com
 #endif
 #include "soapH.h"
 
-SOAP_SOURCE_STAMP("@(#) soapClient.cpp ver 2.8.98 2020-03-21 19:15:26 GMT")
+SOAP_SOURCE_STAMP("@(#) soapClient.cpp ver 2.8.98 2020-03-21 19:27:13 GMT")
 
 
 SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_cpu_info(struct soap *soap, const char *soap_endpoint, const char *soap_action, std::string &info)
@@ -191,7 +191,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_memory_info(struct soap *soap, std::
 	return soap_closesock(soap);
 }
 
-SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_memory_available(struct soap *soap, const char *soap_endpoint, const char *soap_action, float &available)
+SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_memory_available(struct soap *soap, const char *soap_endpoint, const char *soap_action, int &available)
 {	if (soap_send_ns__get_memory_available(soap, soap_endpoint, soap_action) || soap_recv_ns__get_memory_available(soap, available))
 		return soap->error;
 	return SOAP_OK;
@@ -228,10 +228,10 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__get_memory_available(struct soap *soap, 
 	return SOAP_OK;
 }
 
-SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_memory_available(struct soap *soap, float &available)
+SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_memory_available(struct soap *soap, int &available)
 {
 	struct ns__get_memory_availableResponse *soap_tmp_ns__get_memory_availableResponse;
-	soap_default_float(soap, &available);
+	soap_default_int(soap, &available);
 	if (soap_begin_recv(soap)
 	 || soap_envelope_begin_in(soap)
 	 || soap_recv_header(soap)
@@ -248,7 +248,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_memory_available(struct soap *soap, 
 	return soap_closesock(soap);
 }
 
-SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_memory_free(struct soap *soap, const char *soap_endpoint, const char *soap_action, float &free)
+SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_memory_free(struct soap *soap, const char *soap_endpoint, const char *soap_action, int &free)
 {	if (soap_send_ns__get_memory_free(soap, soap_endpoint, soap_action) || soap_recv_ns__get_memory_free(soap, free))
 		return soap->error;
 	return SOAP_OK;
@@ -285,10 +285,10 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__get_memory_free(struct soap *soap, const
 	return SOAP_OK;
 }
 
-SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_memory_free(struct soap *soap, float &free)
+SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_memory_free(struct soap *soap, int &free)
 {
 	struct ns__get_memory_freeResponse *soap_tmp_ns__get_memory_freeResponse;
-	soap_default_float(soap, &free);
+	soap_default_int(soap, &free);
 	if (soap_begin_recv(soap)
 	 || soap_envelope_begin_in(soap)
 	 || soap_recv_header(soap)

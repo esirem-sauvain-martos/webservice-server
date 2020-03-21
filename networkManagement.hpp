@@ -6,8 +6,8 @@ int ns__get_cpu_usage(float& usage);
 
 /* Memory management */
 int ns__get_memory_info(std::string& info);
-int ns__get_memory_available(float& available);
-int ns__get_memory_free(float& free);
+int ns__get_memory_available(int& available);
+int ns__get_memory_free(int& free);
 
 /* Storage management */
 int ns__get_drive_number(unsigned int& number);
