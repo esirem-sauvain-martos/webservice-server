@@ -1,9 +1,9 @@
 CC       = g++
-CFLAGS   = -std=c++17 -DWITH_FASTCGI# -Wall 
-LDFLAGS  = -lfcgi
-SRCS	 = networkManagementServer.cpp
-OBJFILES = networkManagementServer.cpp stdsoap2.cpp soapC.cpp soapmanagerService.cpp
-TARGET   = server.fcgi
+CFLAGS   = -std=c++17 #-DWITH_FASTCGI -Wall 
+LDFLAGS  = 
+SRCS	 = soapAgentServer.cpp
+OBJFILES = soapAgentServer.cpp stdsoap2.cpp soapC.cpp soapagentService.cpp
+TARGET   = server.standalone
 
 all: $(TARGET)
 

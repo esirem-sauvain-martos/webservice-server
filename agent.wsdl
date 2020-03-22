@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions name="manager"
-  targetNamespace="http://tempuri.org/ns.xsd/manager.wsdl"
-  xmlns:tns="http://tempuri.org/ns.xsd/manager.wsdl"
+<definitions name="agent"
+  targetNamespace="http://tempuri.org/ns.xsd/agent.wsdl"
+  xmlns:tns="http://tempuri.org/ns.xsd/agent.wsdl"
   xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
   xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -151,7 +151,7 @@
   <part name="subnet-mask" type="xsd:string"/><!-- ns__set_interface_ip_address::subnet_mask -->
 </message>
 
-<portType name="managerPortType">
+<portType name="agentPortType">
   <operation name="get-cpu-info">
     <documentation>Service definition of function ns__get_cpu_info</documentation>
     <input message="tns:get-cpu-infoRequest"/>
@@ -237,7 +237,7 @@
   </operation>
 </portType>
 
-<binding name="manager" type="tns:managerPortType">
+<binding name="agent" type="tns:agentPortType">
   <SOAP:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
   <operation name="get-cpu-info">
     <SOAP:operation style="rpc" soapAction=""/>
@@ -388,9 +388,9 @@
   </operation>
 </binding>
 
-<service name="manager">
+<service name="agent">
   <documentation>gSOAP 2.8.98 generated service definition</documentation>
-  <port name="manager" binding="tns:manager">
+  <port name="agent" binding="tns:agent">
     <SOAP:address location="http://localhost:80"/>
   </port>
 </service>

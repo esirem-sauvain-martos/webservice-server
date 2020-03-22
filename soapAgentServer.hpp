@@ -1,4 +1,4 @@
-//gsoap ns service name:            manager
+//gsoap ns service name:            agent
 //gsoap ns service protocol:        SOAP
 //gsoap ns service style:           rpc
 //gsoap ns service encoding:        encoded

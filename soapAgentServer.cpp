@@ -19,8 +19,8 @@
 #include <arpa/inet.h>
 
 #include "soapH.h"
-#include "manager.nsmap"
-#include "soapmanagerService.h"
+#include "agent.nsmap"
+#include "soapagentService.h"
 
 using namespace std;
 namespace fs = std::experimental::filesystem;
@@ -120,14 +120,20 @@ bool get_unix_memory_info(const string& field, int& value)
 
 int main()
 {
-    managerService manager;
-    manager.serve();
-    manager.destroy();
+    int port = 8080;
+    
+    agentService agent;
+    agent.soap->accept_timeout = 24 * 60 * 60;               // quit after 24h of inactivity (optional)
+    agent.soap->send_timeout = agent.soap->recv_timeout = 5; // max send and receive socket inactivity time (sec)
+    agent.soap->transfer_timeout = 10;                       // max time for send or receive of messages (sec)
+    while (agent.run(port))                                  // bind, then loop to accept and serve requests
+        agent.soap_stream_fault(std::cerr);
+    agent.destroy();
 
     return EXIT_SUCCESS;
 }
 
-int managerService::get_cpu_info(string& info)
+int agentService::get_cpu_info(string& info)
 {
     ifstream cpuinfo;
     cpuinfo.open("/proc/cpuinfo", ios::in);
@@ -153,7 +159,7 @@ int managerService::get_cpu_info(string& info)
         return -1;
 }
 
-int managerService::get_cpu_usage(float& usage)
+int agentService::get_cpu_usage(float& usage)
 {
     int total_value_1(0), total_value_2(0), work_value_1(0), work_value_2(0);
 
@@ -162,8 +168,8 @@ int managerService::get_cpu_usage(float& usage)
         std::this_thread::sleep_for(250ms);
         if (get_cpu_value(work_value_2, total_value_2))
         {
-            cout << total_value_2 - total_value_1 << " " << work_value_2 - work_value_1 << endl;
             usage = float(work_value_2 - work_value_1) / float(total_value_2 - total_value_1) ;
+            
             return SOAP_OK;
         }
     }
@@ -171,14 +177,14 @@ int managerService::get_cpu_usage(float& usage)
     return -1;
 }
 
-int managerService::get_memory_info(string& info)
+int agentService::get_memory_info(string& info)
 {
     info = "";
 
     return SOAP_OK;
 }
 
-int managerService::get_memory_available(int& available)
+int agentService::get_memory_available(int& available)
 {
     if(get_unix_memory_info("MemAvailable", available))
         return SOAP_OK;
@@ -186,7 +192,7 @@ int managerService::get_memory_available(int& available)
         return -1;
 }
 
-int managerService::get_memory_free(int& free)
+int agentService::get_memory_free(int& free)
 {
     if(get_unix_memory_info("MemFree", free))
         return SOAP_OK;
@@ -194,39 +200,39 @@ int managerService::get_memory_free(int& free)
         return -1;
 }
 
-int managerService::get_drive_number(unsigned int& number)
+int agentService::get_drive_number(unsigned int& number)
 {
     return SOAP_OK;
 }
 
-int managerService::get_drive_names(string *names)
+int agentService::get_drive_names(string *names)
 {
     return SOAP_OK;
 }
 
-int managerService::get_drive_info(const string& name, string& info)
+int agentService::get_drive_info(const string& name, string& info)
 {
     return SOAP_OK;
 }
 
-int managerService::get_drive_total_capacity(const string& name, float& total)
+int agentService::get_drive_total_capacity(const string& name, float& total)
 {
     return SOAP_OK;
 }
 
-int managerService::get_drive_used_capatity(const string& name, float& usage)
+int agentService::get_drive_used_capatity(const string& name, float& usage)
 {
     return SOAP_OK;
 }
 
-int managerService::get_interface_number(unsigned int& number)
+int agentService::get_interface_number(unsigned int& number)
 {
     number = stoi(exec("ls /sys/class/net | wc -w"));
     
     return SOAP_OK;
 }
 
-int managerService::get_interface_names(string* names)
+int agentService::get_interface_names(string* names)
 {
     string int_names[7];
 
@@ -250,7 +256,7 @@ int managerService::get_interface_names(string* names)
     return SOAP_OK;
 }
 
-int managerService::get_interface_info(const string& name, string& info)
+int agentService::get_interface_info(const string& name, string& info)
 {
     struct ifaddrs * ifAddrStruct = nullptr;
     struct ifaddrs * ifa = nullptr;
@@ -282,22 +288,22 @@ int managerService::get_interface_info(const string& name, string& info)
     return SOAP_OK;
 }
 
-int managerService::get_interface_ip_address(const string& name, string& ip_address)
+int agentService::get_interface_ip_address(const string& name, string& ip_address)
 {
     return SOAP_OK;
 }
 
-int managerService::get_interface_speed(const string& name, int& speed)
+int agentService::get_interface_speed(const string& name, int& speed)
 {
     return SOAP_OK;
 }
 
-int managerService::set_hostname(const string& hostname)
+int agentService::set_hostname(const string& hostname)
 {
     return SOAP_OK;
 }
 
-int managerService::set_interface_ip_address(const string& name, const string& ip_address, const string& subnet_mask)
+int agentService::set_interface_ip_address(const string& name, const string& ip_address, const string& subnet_mask)
 {
     return SOAP_OK;
 }
