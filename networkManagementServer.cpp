@@ -19,7 +19,8 @@
 #include <arpa/inet.h>
 
 #include "soapH.h"
-#include "ns.nsmap"
+#include "manager.nsmap"
+#include "soapmanagerService.h"
 
 using namespace std;
 namespace fs = std::experimental::filesystem;
@@ -30,13 +31,9 @@ string exec(const char* cmd)
     string result;
     unique_ptr<FILE, decltype(&pclose)> pipe(popen(cmd, "r"), pclose);
     if (!pipe) 
-    {
         throw runtime_error("popen() failed!");
-    }
     while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) 
-    {
         result += buffer.data();
-    }
     return result;
 }
 
@@ -84,7 +81,7 @@ bool get_cpu_value(int& work_value, int& total_value)
     return false;
 }
 
-bool get_memory_info(const string& field, int& value)
+bool get_unix_memory_info(const string& field, int& value)
 {
     ifstream memory_info;
     memory_info.open("/proc/meminfo", ios::in);
@@ -123,14 +120,14 @@ bool get_memory_info(const string& field, int& value)
 
 int main()
 {
-    string info[7];
-    ns__get_interface_names(nullptr, info);
+    managerService manager;
+    manager.serve();
+    manager.destroy();
 
-    // return soap_serve(soap_new());
     return EXIT_SUCCESS;
 }
 
-int ns__get_cpu_info(struct soap *soap, string& info)
+int managerService::get_cpu_info(string& info)
 {
     ifstream cpuinfo;
     cpuinfo.open("/proc/cpuinfo", ios::in);
@@ -156,7 +153,7 @@ int ns__get_cpu_info(struct soap *soap, string& info)
         return -1;
 }
 
-int ns__get_cpu_usage(struct soap *soap, float& usage)
+int managerService::get_cpu_usage(float& usage)
 {
     int total_value_1(0), total_value_2(0), work_value_1(0), work_value_2(0);
 
@@ -174,62 +171,62 @@ int ns__get_cpu_usage(struct soap *soap, float& usage)
     return -1;
 }
 
-int ns__get_memory_info(struct soap *soap, string& info)
+int managerService::get_memory_info(string& info)
 {
     info = "";
 
     return SOAP_OK;
 }
 
-int ns__get_memory_available(struct soap *soap, int& available)
+int managerService::get_memory_available(int& available)
 {
-    if(get_memory_info("MemAvailable", available))
+    if(get_unix_memory_info("MemAvailable", available))
         return SOAP_OK;
     else
         return -1;
 }
 
-int ns__get_memory_free(struct soap *soap, int& free)
+int managerService::get_memory_free(int& free)
 {
-    if(get_memory_info("MemFree", free))
+    if(get_unix_memory_info("MemFree", free))
         return SOAP_OK;
     else
         return -1;
 }
 
-int ns__get_drive_number(struct soap *soap, unsigned int& number)
+int managerService::get_drive_number(unsigned int& number)
 {
     return SOAP_OK;
 }
 
-int ns__get_drive_names(struct soap *soap, string names[])
+int managerService::get_drive_names(string *names)
 {
     return SOAP_OK;
 }
 
-int ns__get_drive_info(struct soap *soap, string name, string& info)
+int managerService::get_drive_info(const string& name, string& info)
 {
     return SOAP_OK;
 }
 
-int ns__get_drive_total_capacity(struct soap *soap, string name, float& total)
+int managerService::get_drive_total_capacity(const string& name, float& total)
 {
     return SOAP_OK;
 }
 
-int ns__get_drive_used_capatity(struct soap *soap, string name, float& usage)
+int managerService::get_drive_used_capatity(const string& name, float& usage)
 {
     return SOAP_OK;
 }
 
-int ns__get_interface_number(struct soap *soap, unsigned int& number)
+int managerService::get_interface_number(unsigned int& number)
 {
     number = stoi(exec("ls /sys/class/net | wc -w"));
     
     return SOAP_OK;
 }
 
-int ns__get_interface_names(struct soap *soap, string names[])
+int managerService::get_interface_names(string* names)
 {
     string int_names[7];
 
@@ -253,7 +250,7 @@ int ns__get_interface_names(struct soap *soap, string names[])
     return SOAP_OK;
 }
 
-int ns__get_interface_info(struct soap *soap, string name, string& info)
+int managerService::get_interface_info(const string& name, string& info)
 {
     struct ifaddrs * ifAddrStruct = nullptr;
     struct ifaddrs * ifa = nullptr;
@@ -285,22 +282,22 @@ int ns__get_interface_info(struct soap *soap, string name, string& info)
     return SOAP_OK;
 }
 
-int ns__get_interface_ip_address(struct soap *soap, string name, string& ip_address)
+int managerService::get_interface_ip_address(const string& name, string& ip_address)
 {
     return SOAP_OK;
 }
 
-int ns__get_interface_speed(struct soap *soap, string name, int& speed)
+int managerService::get_interface_speed(const string& name, int& speed)
 {
     return SOAP_OK;
 }
 
-int ns__set_hostname(struct soap *soap, string hostname)
+int managerService::set_hostname(const string& hostname)
 {
     return SOAP_OK;
 }
 
-int ns__set_interface_ip_address(struct soap *soap, string name, string ip_address, string subnet_mask)
+int managerService::set_interface_ip_address(const string& name, const string& ip_address, const string& subnet_mask)
 {
     return SOAP_OK;
 }

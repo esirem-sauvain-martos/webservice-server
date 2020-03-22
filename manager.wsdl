@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="manager"
+  targetNamespace="http://tempuri.org/ns.xsd/manager.wsdl"
+  xmlns:tns="http://tempuri.org/ns.xsd/manager.wsdl"
+  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:ns="http://tempuri.org/ns.xsd"
+  xmlns:SOAP="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns:HTTP="http://schemas.xmlsoap.org/wsdl/http/"
+  xmlns:MIME="http://schemas.xmlsoap.org/wsdl/mime/"
+  xmlns:DIME="http://schemas.xmlsoap.org/ws/2002/04/dime/wsdl/"
+  xmlns:WSDL="http://schemas.xmlsoap.org/wsdl/"
+  xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+<types>
+
+  <schema targetNamespace="http://tempuri.org/ns.xsd"
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:ns="http://tempuri.org/ns.xsd"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="unqualified"
+    attributeFormDefault="unqualified">
+    <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+  </schema>
+
+</types>
+
+<message name="get-cpu-infoRequest">
+</message>
+
+<message name="get-cpu-infoResponse">
+  <part name="info" type="xsd:string"/><!-- ns__get_cpu_info::info -->
+</message>
+
+<message name="get-cpu-usageRequest">
+</message>
+
+<message name="get-cpu-usageResponse">
+  <part name="usage" type="xsd:float"/><!-- ns__get_cpu_usage::usage -->
+</message>
+
+<message name="get-memory-infoRequest">
+</message>
+
+<message name="get-memory-infoResponse">
+  <part name="info" type="xsd:string"/><!-- ns__get_memory_info::info -->
+</message>
+
+<message name="get-memory-availableRequest">
+</message>
+
+<message name="get-memory-availableResponse">
+  <part name="available" type="xsd:int"/><!-- ns__get_memory_available::available -->
+</message>
+
+<message name="get-memory-freeRequest">
+</message>
+
+<message name="get-memory-freeResponse">
+  <part name="free" type="xsd:int"/><!-- ns__get_memory_free::free -->
+</message>
+
+<message name="get-drive-numberRequest">
+</message>
+
+<message name="get-drive-numberResponse">
+  <part name="number" type="xsd:unsignedInt"/><!-- ns__get_drive_number::number -->
+</message>
+
+<message name="get-drive-namesRequest">
+</message>
+
+<message name="get-drive-namesResponse">
+  <part name="names" type="xsd:string"/><!-- ns__get_drive_names::names -->
+</message>
+
+<message name="get-drive-infoRequest">
+  <part name="name" type="xsd:string"/><!-- ns__get_drive_info::name -->
+</message>
+
+<message name="get-drive-infoResponse">
+  <part name="info" type="xsd:string"/><!-- ns__get_drive_info::info -->
+</message>
+
+<message name="get-drive-total-capacityRequest">
+  <part name="name" type="xsd:string"/><!-- ns__get_drive_total_capacity::name -->
+</message>
+
+<message name="get-drive-total-capacityResponse">
+  <part name="total" type="xsd:float"/><!-- ns__get_drive_total_capacity::total -->
+</message>
+
+<message name="get-drive-used-capatityRequest">
+  <part name="name" type="xsd:string"/><!-- ns__get_drive_used_capatity::name -->
+</message>
+
+<message name="get-drive-used-capatityResponse">
+  <part name="usage" type="xsd:float"/><!-- ns__get_drive_used_capatity::usage -->
+</message>
+
+<message name="get-interface-numberRequest">
+</message>
+
+<message name="get-interface-numberResponse">
+  <part name="number" type="xsd:unsignedInt"/><!-- ns__get_interface_number::number -->
+</message>
+
+<message name="get-interface-namesRequest">
+</message>
+
+<message name="get-interface-namesResponse">
+  <part name="names" type="xsd:string"/><!-- ns__get_interface_names::names -->
+</message>
+
+<message name="get-interface-infoRequest">
+  <part name="name" type="xsd:string"/><!-- ns__get_interface_info::name -->
+</message>
+
+<message name="get-interface-infoResponse">
+  <part name="info" type="xsd:string"/><!-- ns__get_interface_info::info -->
+</message>
+
+<message name="get-interface-ip-addressRequest">
+  <part name="name" type="xsd:string"/><!-- ns__get_interface_ip_address::name -->
+</message>
+
+<message name="get-interface-ip-addressResponse">
+  <part name="ip-address" type="xsd:string"/><!-- ns__get_interface_ip_address::ip_address -->
+</message>
+
+<message name="get-interface-speedRequest">
+  <part name="name" type="xsd:string"/><!-- ns__get_interface_speed::name -->
+</message>
+
+<message name="get-interface-speedResponse">
+  <part name="speed" type="xsd:int"/><!-- ns__get_interface_speed::speed -->
+</message>
+
+<message name="set-hostname">
+  <part name="hostname" type="xsd:string"/><!-- ns__set_hostname::hostname -->
+</message>
+
+<message name="set-interface-ip-address">
+  <part name="name" type="xsd:string"/><!-- ns__set_interface_ip_address::name -->
+  <part name="ip-address" type="xsd:string"/><!-- ns__set_interface_ip_address::ip_address -->
+  <part name="subnet-mask" type="xsd:string"/><!-- ns__set_interface_ip_address::subnet_mask -->
+</message>
+
+<portType name="managerPortType">
+  <operation name="get-cpu-info">
+    <documentation>Service definition of function ns__get_cpu_info</documentation>
+    <input message="tns:get-cpu-infoRequest"/>
+    <output message="tns:get-cpu-infoResponse"/>
+  </operation>
+  <operation name="get-cpu-usage">
+    <documentation>Service definition of function ns__get_cpu_usage</documentation>
+    <input message="tns:get-cpu-usageRequest"/>
+    <output message="tns:get-cpu-usageResponse"/>
+  </operation>
+  <operation name="get-memory-info">
+    <documentation>Service definition of function ns__get_memory_info</documentation>
+    <input message="tns:get-memory-infoRequest"/>
+    <output message="tns:get-memory-infoResponse"/>
+  </operation>
+  <operation name="get-memory-available">
+    <documentation>Service definition of function ns__get_memory_available</documentation>
+    <input message="tns:get-memory-availableRequest"/>
+    <output message="tns:get-memory-availableResponse"/>
+  </operation>
+  <operation name="get-memory-free">
+    <documentation>Service definition of function ns__get_memory_free</documentation>
+    <input message="tns:get-memory-freeRequest"/>
+    <output message="tns:get-memory-freeResponse"/>
+  </operation>
+  <operation name="get-drive-number">
+    <documentation>Service definition of function ns__get_drive_number</documentation>
+    <input message="tns:get-drive-numberRequest"/>
+    <output message="tns:get-drive-numberResponse"/>
+  </operation>
+  <operation name="get-drive-names">
+    <documentation>Service definition of function ns__get_drive_names</documentation>
+    <input message="tns:get-drive-namesRequest"/>
+    <output message="tns:get-drive-namesResponse"/>
+  </operation>
+  <operation name="get-drive-info">
+    <documentation>Service definition of function ns__get_drive_info</documentation>
+    <input message="tns:get-drive-infoRequest"/>
+    <output message="tns:get-drive-infoResponse"/>
+  </operation>
+  <operation name="get-drive-total-capacity">
+    <documentation>Service definition of function ns__get_drive_total_capacity</documentation>
+    <input message="tns:get-drive-total-capacityRequest"/>
+    <output message="tns:get-drive-total-capacityResponse"/>
+  </operation>
+  <operation name="get-drive-used-capatity">
+    <documentation>Service definition of function ns__get_drive_used_capatity</documentation>
+    <input message="tns:get-drive-used-capatityRequest"/>
+    <output message="tns:get-drive-used-capatityResponse"/>
+  </operation>
+  <operation name="get-interface-number">
+    <documentation>Service definition of function ns__get_interface_number</documentation>
+    <input message="tns:get-interface-numberRequest"/>
+    <output message="tns:get-interface-numberResponse"/>
+  </operation>
+  <operation name="get-interface-names">
+    <documentation>Service definition of function ns__get_interface_names</documentation>
+    <input message="tns:get-interface-namesRequest"/>
+    <output message="tns:get-interface-namesResponse"/>
+  </operation>
+  <operation name="get-interface-info">
+    <documentation>Service definition of function ns__get_interface_info</documentation>
+    <input message="tns:get-interface-infoRequest"/>
+    <output message="tns:get-interface-infoResponse"/>
+  </operation>
+  <operation name="get-interface-ip-address">
+    <documentation>Service definition of function ns__get_interface_ip_address</documentation>
+    <input message="tns:get-interface-ip-addressRequest"/>
+    <output message="tns:get-interface-ip-addressResponse"/>
+  </operation>
+  <operation name="get-interface-speed">
+    <documentation>Service definition of function ns__get_interface_speed</documentation>
+    <input message="tns:get-interface-speedRequest"/>
+    <output message="tns:get-interface-speedResponse"/>
+  </operation>
+  <operation name="set-hostname">
+    <documentation>Service definition of function ns__set_hostname</documentation>
+    <input message="tns:set-hostname"/>
+  </operation>
+  <operation name="set-interface-ip-address">
+    <documentation>Service definition of function ns__set_interface_ip_address</documentation>
+    <input message="tns:set-interface-ip-address"/>
+  </operation>
+</portType>
+
+<binding name="manager" type="tns:managerPortType">
+  <SOAP:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <operation name="get-cpu-info">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </input>
+    <output>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </output>
+  </operation>
+  <operation name="get-cpu-usage">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </input>
+    <output>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </output>
+  </operation>
+  <operation name="get-memory-info">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </input>
+    <output>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </output>
+  </operation>
+  <operation name="get-memory-available">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </input>
+    <output>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </output>
+  </operation>
+  <operation name="get-memory-free">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </input>
+    <output>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </output>
+  </operation>
+  <operation name="get-drive-number">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </input>
+    <output>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </output>
+  </operation>
+  <operation name="get-drive-names">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </input>
+    <output>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </output>
+  </operation>
+  <operation name="get-drive-info">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </input>
+    <output>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </output>
+  </operation>
+  <operation name="get-drive-total-capacity">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </input>
+    <output>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </output>
+  </operation>
+  <operation name="get-drive-used-capatity">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </input>
+    <output>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </output>
+  </operation>
+  <operation name="get-interface-number">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </input>
+    <output>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </output>
+  </operation>
+  <operation name="get-interface-names">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </input>
+    <output>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </output>
+  </operation>
+  <operation name="get-interface-info">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </input>
+    <output>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </output>
+  </operation>
+  <operation name="get-interface-ip-address">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </input>
+    <output>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </output>
+  </operation>
+  <operation name="get-interface-speed">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </input>
+    <output>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </output>
+  </operation>
+  <operation name="set-hostname">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </input>
+  </operation>
+  <operation name="set-interface-ip-address">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://tempuri.org/ns.xsd"/>
+    </input>
+  </operation>
+</binding>
+
+<service name="manager">
+  <documentation>gSOAP 2.8.98 generated service definition</documentation>
+  <port name="manager" binding="tns:manager">
+    <SOAP:address location="http://localhost:80"/>
+  </port>
+</service>
+
+</definitions>

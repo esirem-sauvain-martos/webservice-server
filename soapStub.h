@@ -34,40 +34,40 @@ A commercial use license is available from Genivia Inc., contact@genivia.com
  *                                                                            *
 \******************************************************************************/
 
-struct ns__get_cpu_infoResponse;	/* networkManagement.hpp:4 */
-struct ns__get_cpu_info;	/* networkManagement.hpp:4 */
-struct ns__get_cpu_usageResponse;	/* networkManagement.hpp:5 */
-struct ns__get_cpu_usage;	/* networkManagement.hpp:5 */
-struct ns__get_memory_infoResponse;	/* networkManagement.hpp:8 */
-struct ns__get_memory_info;	/* networkManagement.hpp:8 */
-struct ns__get_memory_availableResponse;	/* networkManagement.hpp:9 */
-struct ns__get_memory_available;	/* networkManagement.hpp:9 */
-struct ns__get_memory_freeResponse;	/* networkManagement.hpp:10 */
-struct ns__get_memory_free;	/* networkManagement.hpp:10 */
-struct ns__get_drive_numberResponse;	/* networkManagement.hpp:13 */
-struct ns__get_drive_number;	/* networkManagement.hpp:13 */
-struct ns__get_drive_namesResponse;	/* networkManagement.hpp:14 */
-struct ns__get_drive_names;	/* networkManagement.hpp:14 */
-struct ns__get_drive_infoResponse;	/* networkManagement.hpp:15 */
-struct ns__get_drive_info;	/* networkManagement.hpp:15 */
-struct ns__get_drive_total_capacityResponse;	/* networkManagement.hpp:16 */
-struct ns__get_drive_total_capacity;	/* networkManagement.hpp:16 */
-struct ns__get_drive_used_capatityResponse;	/* networkManagement.hpp:17 */
-struct ns__get_drive_used_capatity;	/* networkManagement.hpp:17 */
-struct ns__get_interface_numberResponse;	/* networkManagement.hpp:20 */
-struct ns__get_interface_number;	/* networkManagement.hpp:20 */
-struct ns__get_interface_namesResponse;	/* networkManagement.hpp:21 */
-struct ns__get_interface_names;	/* networkManagement.hpp:21 */
-struct ns__get_interface_infoResponse;	/* networkManagement.hpp:22 */
-struct ns__get_interface_info;	/* networkManagement.hpp:22 */
-struct ns__get_interface_ip_addressResponse;	/* networkManagement.hpp:23 */
-struct ns__get_interface_ip_address;	/* networkManagement.hpp:23 */
-struct ns__get_interface_speedResponse;	/* networkManagement.hpp:24 */
-struct ns__get_interface_speed;	/* networkManagement.hpp:24 */
-struct ns__set_hostname;	/* networkManagement.hpp:27 */
-struct ns__set_interface_ip_address;	/* networkManagement.hpp:28 */
+struct ns__get_cpu_infoResponse;	/* networkManagement.hpp:9 */
+struct ns__get_cpu_info;	/* networkManagement.hpp:9 */
+struct ns__get_cpu_usageResponse;	/* networkManagement.hpp:10 */
+struct ns__get_cpu_usage;	/* networkManagement.hpp:10 */
+struct ns__get_memory_infoResponse;	/* networkManagement.hpp:13 */
+struct ns__get_memory_info;	/* networkManagement.hpp:13 */
+struct ns__get_memory_availableResponse;	/* networkManagement.hpp:14 */
+struct ns__get_memory_available;	/* networkManagement.hpp:14 */
+struct ns__get_memory_freeResponse;	/* networkManagement.hpp:15 */
+struct ns__get_memory_free;	/* networkManagement.hpp:15 */
+struct ns__get_drive_numberResponse;	/* networkManagement.hpp:18 */
+struct ns__get_drive_number;	/* networkManagement.hpp:18 */
+struct ns__get_drive_namesResponse;	/* networkManagement.hpp:19 */
+struct ns__get_drive_names;	/* networkManagement.hpp:19 */
+struct ns__get_drive_infoResponse;	/* networkManagement.hpp:20 */
+struct ns__get_drive_info;	/* networkManagement.hpp:20 */
+struct ns__get_drive_total_capacityResponse;	/* networkManagement.hpp:21 */
+struct ns__get_drive_total_capacity;	/* networkManagement.hpp:21 */
+struct ns__get_drive_used_capatityResponse;	/* networkManagement.hpp:22 */
+struct ns__get_drive_used_capatity;	/* networkManagement.hpp:22 */
+struct ns__get_interface_numberResponse;	/* networkManagement.hpp:25 */
+struct ns__get_interface_number;	/* networkManagement.hpp:25 */
+struct ns__get_interface_namesResponse;	/* networkManagement.hpp:26 */
+struct ns__get_interface_names;	/* networkManagement.hpp:26 */
+struct ns__get_interface_infoResponse;	/* networkManagement.hpp:27 */
+struct ns__get_interface_info;	/* networkManagement.hpp:27 */
+struct ns__get_interface_ip_addressResponse;	/* networkManagement.hpp:28 */
+struct ns__get_interface_ip_address;	/* networkManagement.hpp:28 */
+struct ns__get_interface_speedResponse;	/* networkManagement.hpp:29 */
+struct ns__get_interface_speed;	/* networkManagement.hpp:29 */
+struct ns__set_hostname;	/* networkManagement.hpp:32 */
+struct ns__set_interface_ip_address;	/* networkManagement.hpp:33 */
 
-/* networkManagement.hpp:4 */
+/* networkManagement.hpp:9 */
 #ifndef SOAP_TYPE_ns__get_cpu_infoResponse
 #define SOAP_TYPE_ns__get_cpu_infoResponse (10)
 /* complex XML schema type 'ns:get-cpu-infoResponse': */
@@ -85,7 +85,7 @@ struct SOAP_CMAC ns__get_cpu_infoResponse {
 };
 #endif
 
-/* networkManagement.hpp:4 */
+/* networkManagement.hpp:9 */
 #ifndef SOAP_TYPE_ns__get_cpu_info
 #define SOAP_TYPE_ns__get_cpu_info (11)
 /* complex XML schema type 'ns:get-cpu-info': */
@@ -100,7 +100,7 @@ struct SOAP_CMAC ns__get_cpu_info {
 };
 #endif
 
-/* networkManagement.hpp:5 */
+/* networkManagement.hpp:10 */
 #ifndef SOAP_TYPE_ns__get_cpu_usageResponse
 #define SOAP_TYPE_ns__get_cpu_usageResponse (15)
 /* complex XML schema type 'ns:get-cpu-usageResponse': */
@@ -118,7 +118,7 @@ struct SOAP_CMAC ns__get_cpu_usageResponse {
 };
 #endif
 
-/* networkManagement.hpp:5 */
+/* networkManagement.hpp:10 */
 #ifndef SOAP_TYPE_ns__get_cpu_usage
 #define SOAP_TYPE_ns__get_cpu_usage (16)
 /* complex XML schema type 'ns:get-cpu-usage': */
@@ -133,7 +133,7 @@ struct SOAP_CMAC ns__get_cpu_usage {
 };
 #endif
 
-/* networkManagement.hpp:8 */
+/* networkManagement.hpp:13 */
 #ifndef SOAP_TYPE_ns__get_memory_infoResponse
 #define SOAP_TYPE_ns__get_memory_infoResponse (18)
 /* complex XML schema type 'ns:get-memory-infoResponse': */
@@ -151,7 +151,7 @@ struct SOAP_CMAC ns__get_memory_infoResponse {
 };
 #endif
 
-/* networkManagement.hpp:8 */
+/* networkManagement.hpp:13 */
 #ifndef SOAP_TYPE_ns__get_memory_info
 #define SOAP_TYPE_ns__get_memory_info (19)
 /* complex XML schema type 'ns:get-memory-info': */
@@ -166,7 +166,7 @@ struct SOAP_CMAC ns__get_memory_info {
 };
 #endif
 
-/* networkManagement.hpp:9 */
+/* networkManagement.hpp:14 */
 #ifndef SOAP_TYPE_ns__get_memory_availableResponse
 #define SOAP_TYPE_ns__get_memory_availableResponse (22)
 /* complex XML schema type 'ns:get-memory-availableResponse': */
@@ -184,7 +184,7 @@ struct SOAP_CMAC ns__get_memory_availableResponse {
 };
 #endif
 
-/* networkManagement.hpp:9 */
+/* networkManagement.hpp:14 */
 #ifndef SOAP_TYPE_ns__get_memory_available
 #define SOAP_TYPE_ns__get_memory_available (23)
 /* complex XML schema type 'ns:get-memory-available': */
@@ -199,7 +199,7 @@ struct SOAP_CMAC ns__get_memory_available {
 };
 #endif
 
-/* networkManagement.hpp:10 */
+/* networkManagement.hpp:15 */
 #ifndef SOAP_TYPE_ns__get_memory_freeResponse
 #define SOAP_TYPE_ns__get_memory_freeResponse (25)
 /* complex XML schema type 'ns:get-memory-freeResponse': */
@@ -217,7 +217,7 @@ struct SOAP_CMAC ns__get_memory_freeResponse {
 };
 #endif
 
-/* networkManagement.hpp:10 */
+/* networkManagement.hpp:15 */
 #ifndef SOAP_TYPE_ns__get_memory_free
 #define SOAP_TYPE_ns__get_memory_free (26)
 /* complex XML schema type 'ns:get-memory-free': */
@@ -232,7 +232,7 @@ struct SOAP_CMAC ns__get_memory_free {
 };
 #endif
 
-/* networkManagement.hpp:13 */
+/* networkManagement.hpp:18 */
 #ifndef SOAP_TYPE_ns__get_drive_numberResponse
 #define SOAP_TYPE_ns__get_drive_numberResponse (30)
 /* complex XML schema type 'ns:get-drive-numberResponse': */
@@ -250,7 +250,7 @@ struct SOAP_CMAC ns__get_drive_numberResponse {
 };
 #endif
 
-/* networkManagement.hpp:13 */
+/* networkManagement.hpp:18 */
 #ifndef SOAP_TYPE_ns__get_drive_number
 #define SOAP_TYPE_ns__get_drive_number (31)
 /* complex XML schema type 'ns:get-drive-number': */
@@ -265,7 +265,7 @@ struct SOAP_CMAC ns__get_drive_number {
 };
 #endif
 
-/* networkManagement.hpp:14 */
+/* networkManagement.hpp:19 */
 #ifndef SOAP_TYPE_ns__get_drive_namesResponse
 #define SOAP_TYPE_ns__get_drive_namesResponse (34)
 /* complex XML schema type 'ns:get-drive-namesResponse': */
@@ -283,7 +283,7 @@ struct SOAP_CMAC ns__get_drive_namesResponse {
 };
 #endif
 
-/* networkManagement.hpp:14 */
+/* networkManagement.hpp:19 */
 #ifndef SOAP_TYPE_ns__get_drive_names
 #define SOAP_TYPE_ns__get_drive_names (35)
 /* complex XML schema type 'ns:get-drive-names': */
@@ -298,7 +298,7 @@ struct SOAP_CMAC ns__get_drive_names {
 };
 #endif
 
-/* networkManagement.hpp:15 */
+/* networkManagement.hpp:20 */
 #ifndef SOAP_TYPE_ns__get_drive_infoResponse
 #define SOAP_TYPE_ns__get_drive_infoResponse (37)
 /* complex XML schema type 'ns:get-drive-infoResponse': */
@@ -316,7 +316,7 @@ struct SOAP_CMAC ns__get_drive_infoResponse {
 };
 #endif
 
-/* networkManagement.hpp:15 */
+/* networkManagement.hpp:20 */
 #ifndef SOAP_TYPE_ns__get_drive_info
 #define SOAP_TYPE_ns__get_drive_info (38)
 /* complex XML schema type 'ns:get-drive-info': */
@@ -334,7 +334,7 @@ struct SOAP_CMAC ns__get_drive_info {
 };
 #endif
 
-/* networkManagement.hpp:16 */
+/* networkManagement.hpp:21 */
 #ifndef SOAP_TYPE_ns__get_drive_total_capacityResponse
 #define SOAP_TYPE_ns__get_drive_total_capacityResponse (40)
 /* complex XML schema type 'ns:get-drive-total-capacityResponse': */
@@ -352,7 +352,7 @@ struct SOAP_CMAC ns__get_drive_total_capacityResponse {
 };
 #endif
 
-/* networkManagement.hpp:16 */
+/* networkManagement.hpp:21 */
 #ifndef SOAP_TYPE_ns__get_drive_total_capacity
 #define SOAP_TYPE_ns__get_drive_total_capacity (41)
 /* complex XML schema type 'ns:get-drive-total-capacity': */
@@ -370,7 +370,7 @@ struct SOAP_CMAC ns__get_drive_total_capacity {
 };
 #endif
 
-/* networkManagement.hpp:17 */
+/* networkManagement.hpp:22 */
 #ifndef SOAP_TYPE_ns__get_drive_used_capatityResponse
 #define SOAP_TYPE_ns__get_drive_used_capatityResponse (43)
 /* complex XML schema type 'ns:get-drive-used-capatityResponse': */
@@ -388,7 +388,7 @@ struct SOAP_CMAC ns__get_drive_used_capatityResponse {
 };
 #endif
 
-/* networkManagement.hpp:17 */
+/* networkManagement.hpp:22 */
 #ifndef SOAP_TYPE_ns__get_drive_used_capatity
 #define SOAP_TYPE_ns__get_drive_used_capatity (44)
 /* complex XML schema type 'ns:get-drive-used-capatity': */
@@ -406,7 +406,7 @@ struct SOAP_CMAC ns__get_drive_used_capatity {
 };
 #endif
 
-/* networkManagement.hpp:20 */
+/* networkManagement.hpp:25 */
 #ifndef SOAP_TYPE_ns__get_interface_numberResponse
 #define SOAP_TYPE_ns__get_interface_numberResponse (46)
 /* complex XML schema type 'ns:get-interface-numberResponse': */
@@ -424,7 +424,7 @@ struct SOAP_CMAC ns__get_interface_numberResponse {
 };
 #endif
 
-/* networkManagement.hpp:20 */
+/* networkManagement.hpp:25 */
 #ifndef SOAP_TYPE_ns__get_interface_number
 #define SOAP_TYPE_ns__get_interface_number (47)
 /* complex XML schema type 'ns:get-interface-number': */
@@ -439,7 +439,7 @@ struct SOAP_CMAC ns__get_interface_number {
 };
 #endif
 
-/* networkManagement.hpp:21 */
+/* networkManagement.hpp:26 */
 #ifndef SOAP_TYPE_ns__get_interface_namesResponse
 #define SOAP_TYPE_ns__get_interface_namesResponse (49)
 /* complex XML schema type 'ns:get-interface-namesResponse': */
@@ -457,7 +457,7 @@ struct SOAP_CMAC ns__get_interface_namesResponse {
 };
 #endif
 
-/* networkManagement.hpp:21 */
+/* networkManagement.hpp:26 */
 #ifndef SOAP_TYPE_ns__get_interface_names
 #define SOAP_TYPE_ns__get_interface_names (50)
 /* complex XML schema type 'ns:get-interface-names': */
@@ -472,7 +472,7 @@ struct SOAP_CMAC ns__get_interface_names {
 };
 #endif
 
-/* networkManagement.hpp:22 */
+/* networkManagement.hpp:27 */
 #ifndef SOAP_TYPE_ns__get_interface_infoResponse
 #define SOAP_TYPE_ns__get_interface_infoResponse (52)
 /* complex XML schema type 'ns:get-interface-infoResponse': */
@@ -490,7 +490,7 @@ struct SOAP_CMAC ns__get_interface_infoResponse {
 };
 #endif
 
-/* networkManagement.hpp:22 */
+/* networkManagement.hpp:27 */
 #ifndef SOAP_TYPE_ns__get_interface_info
 #define SOAP_TYPE_ns__get_interface_info (53)
 /* complex XML schema type 'ns:get-interface-info': */
@@ -508,7 +508,7 @@ struct SOAP_CMAC ns__get_interface_info {
 };
 #endif
 
-/* networkManagement.hpp:23 */
+/* networkManagement.hpp:28 */
 #ifndef SOAP_TYPE_ns__get_interface_ip_addressResponse
 #define SOAP_TYPE_ns__get_interface_ip_addressResponse (55)
 /* complex XML schema type 'ns:get-interface-ip-addressResponse': */
@@ -526,7 +526,7 @@ struct SOAP_CMAC ns__get_interface_ip_addressResponse {
 };
 #endif
 
-/* networkManagement.hpp:23 */
+/* networkManagement.hpp:28 */
 #ifndef SOAP_TYPE_ns__get_interface_ip_address
 #define SOAP_TYPE_ns__get_interface_ip_address (56)
 /* complex XML schema type 'ns:get-interface-ip-address': */
@@ -544,7 +544,7 @@ struct SOAP_CMAC ns__get_interface_ip_address {
 };
 #endif
 
-/* networkManagement.hpp:24 */
+/* networkManagement.hpp:29 */
 #ifndef SOAP_TYPE_ns__get_interface_speedResponse
 #define SOAP_TYPE_ns__get_interface_speedResponse (58)
 /* complex XML schema type 'ns:get-interface-speedResponse': */
@@ -562,7 +562,7 @@ struct SOAP_CMAC ns__get_interface_speedResponse {
 };
 #endif
 
-/* networkManagement.hpp:24 */
+/* networkManagement.hpp:29 */
 #ifndef SOAP_TYPE_ns__get_interface_speed
 #define SOAP_TYPE_ns__get_interface_speed (59)
 /* complex XML schema type 'ns:get-interface-speed': */
@@ -580,7 +580,7 @@ struct SOAP_CMAC ns__get_interface_speed {
 };
 #endif
 
-/* networkManagement.hpp:27 */
+/* networkManagement.hpp:32 */
 #ifndef SOAP_TYPE_ns__set_hostname
 #define SOAP_TYPE_ns__set_hostname (62)
 /* complex XML schema type 'ns:set-hostname': */
@@ -598,7 +598,7 @@ struct SOAP_CMAC ns__set_hostname {
 };
 #endif
 
-/* networkManagement.hpp:28 */
+/* networkManagement.hpp:33 */
 #ifndef SOAP_TYPE_ns__set_interface_ip_address
 #define SOAP_TYPE_ns__set_interface_ip_address (64)
 /* complex XML schema type 'ns:set-interface-ip-address': */
@@ -620,7 +620,7 @@ struct SOAP_CMAC ns__set_interface_ip_address {
 };
 #endif
 
-/* networkManagement.hpp:29 */
+/* networkManagement.hpp:34 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Header
 #define SOAP_TYPE_SOAP_ENV__Header (65)
@@ -637,7 +637,7 @@ struct SOAP_CMAC SOAP_ENV__Header {
 #endif
 #endif
 
-/* networkManagement.hpp:29 */
+/* networkManagement.hpp:34 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Code
 #define SOAP_TYPE_SOAP_ENV__Code (66)
@@ -660,7 +660,7 @@ struct SOAP_CMAC SOAP_ENV__Code {
 #endif
 #endif
 
-/* networkManagement.hpp:29 */
+/* networkManagement.hpp:34 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Detail
 #define SOAP_TYPE_SOAP_ENV__Detail (68)
@@ -683,7 +683,7 @@ struct SOAP_CMAC SOAP_ENV__Detail {
 #endif
 #endif
 
-/* networkManagement.hpp:29 */
+/* networkManagement.hpp:34 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Reason
 #define SOAP_TYPE_SOAP_ENV__Reason (70)
@@ -703,7 +703,7 @@ struct SOAP_CMAC SOAP_ENV__Reason {
 #endif
 #endif
 
-/* networkManagement.hpp:29 */
+/* networkManagement.hpp:34 */
 #ifndef WITH_NOGLOBAL
 #ifndef SOAP_TYPE_SOAP_ENV__Fault
 #define SOAP_TYPE_SOAP_ENV__Fault (71)
@@ -1016,211 +1016,6 @@ typedef char *_QName;
  *                                                                            *
 \******************************************************************************/
 
-
-/******************************************************************************\
- *                                                                            *
- * Client-Side Call Stub Functions                                            *
- *                                                                            *
-\******************************************************************************/
-
-    
-    /** Web service synchronous operation 'soap_call_ns__get_cpu_info' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_cpu_info(struct soap *soap, const char *soap_endpoint, const char *soap_action, std::string &info);
-    /** Web service asynchronous operation 'soap_send_ns__get_cpu_info' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__get_cpu_info(struct soap *soap, const char *soap_endpoint, const char *soap_action);
-    /** Web service asynchronous operation 'soap_recv_ns__get_cpu_info' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_cpu_info(struct soap *soap, std::string &info);
-    
-    /** Web service synchronous operation 'soap_call_ns__get_cpu_usage' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_cpu_usage(struct soap *soap, const char *soap_endpoint, const char *soap_action, float &usage);
-    /** Web service asynchronous operation 'soap_send_ns__get_cpu_usage' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__get_cpu_usage(struct soap *soap, const char *soap_endpoint, const char *soap_action);
-    /** Web service asynchronous operation 'soap_recv_ns__get_cpu_usage' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_cpu_usage(struct soap *soap, float &usage);
-    
-    /** Web service synchronous operation 'soap_call_ns__get_memory_info' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_memory_info(struct soap *soap, const char *soap_endpoint, const char *soap_action, std::string &info);
-    /** Web service asynchronous operation 'soap_send_ns__get_memory_info' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__get_memory_info(struct soap *soap, const char *soap_endpoint, const char *soap_action);
-    /** Web service asynchronous operation 'soap_recv_ns__get_memory_info' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_memory_info(struct soap *soap, std::string &info);
-    
-    /** Web service synchronous operation 'soap_call_ns__get_memory_available' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_memory_available(struct soap *soap, const char *soap_endpoint, const char *soap_action, int &available);
-    /** Web service asynchronous operation 'soap_send_ns__get_memory_available' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__get_memory_available(struct soap *soap, const char *soap_endpoint, const char *soap_action);
-    /** Web service asynchronous operation 'soap_recv_ns__get_memory_available' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_memory_available(struct soap *soap, int &available);
-    
-    /** Web service synchronous operation 'soap_call_ns__get_memory_free' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_memory_free(struct soap *soap, const char *soap_endpoint, const char *soap_action, int &free);
-    /** Web service asynchronous operation 'soap_send_ns__get_memory_free' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__get_memory_free(struct soap *soap, const char *soap_endpoint, const char *soap_action);
-    /** Web service asynchronous operation 'soap_recv_ns__get_memory_free' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_memory_free(struct soap *soap, int &free);
-    
-    /** Web service synchronous operation 'soap_call_ns__get_drive_number' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_drive_number(struct soap *soap, const char *soap_endpoint, const char *soap_action, unsigned int &number);
-    /** Web service asynchronous operation 'soap_send_ns__get_drive_number' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__get_drive_number(struct soap *soap, const char *soap_endpoint, const char *soap_action);
-    /** Web service asynchronous operation 'soap_recv_ns__get_drive_number' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_drive_number(struct soap *soap, unsigned int &number);
-    
-    /** Web service synchronous operation 'soap_call_ns__get_drive_names' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_drive_names(struct soap *soap, const char *soap_endpoint, const char *soap_action, std::string *names);
-    /** Web service asynchronous operation 'soap_send_ns__get_drive_names' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__get_drive_names(struct soap *soap, const char *soap_endpoint, const char *soap_action);
-    /** Web service asynchronous operation 'soap_recv_ns__get_drive_names' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_drive_names(struct soap *soap, std::string *names);
-    
-    /** Web service synchronous operation 'soap_call_ns__get_drive_info' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_drive_info(struct soap *soap, const char *soap_endpoint, const char *soap_action, const std::string& name, std::string &info);
-    /** Web service asynchronous operation 'soap_send_ns__get_drive_info' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__get_drive_info(struct soap *soap, const char *soap_endpoint, const char *soap_action, const std::string& name);
-    /** Web service asynchronous operation 'soap_recv_ns__get_drive_info' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_drive_info(struct soap *soap, std::string &info);
-    
-    /** Web service synchronous operation 'soap_call_ns__get_drive_total_capacity' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_drive_total_capacity(struct soap *soap, const char *soap_endpoint, const char *soap_action, const std::string& name, float &total);
-    /** Web service asynchronous operation 'soap_send_ns__get_drive_total_capacity' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__get_drive_total_capacity(struct soap *soap, const char *soap_endpoint, const char *soap_action, const std::string& name);
-    /** Web service asynchronous operation 'soap_recv_ns__get_drive_total_capacity' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_drive_total_capacity(struct soap *soap, float &total);
-    
-    /** Web service synchronous operation 'soap_call_ns__get_drive_used_capatity' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_drive_used_capatity(struct soap *soap, const char *soap_endpoint, const char *soap_action, const std::string& name, float &usage);
-    /** Web service asynchronous operation 'soap_send_ns__get_drive_used_capatity' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__get_drive_used_capatity(struct soap *soap, const char *soap_endpoint, const char *soap_action, const std::string& name);
-    /** Web service asynchronous operation 'soap_recv_ns__get_drive_used_capatity' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_drive_used_capatity(struct soap *soap, float &usage);
-    
-    /** Web service synchronous operation 'soap_call_ns__get_interface_number' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_interface_number(struct soap *soap, const char *soap_endpoint, const char *soap_action, unsigned int &number);
-    /** Web service asynchronous operation 'soap_send_ns__get_interface_number' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__get_interface_number(struct soap *soap, const char *soap_endpoint, const char *soap_action);
-    /** Web service asynchronous operation 'soap_recv_ns__get_interface_number' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_interface_number(struct soap *soap, unsigned int &number);
-    
-    /** Web service synchronous operation 'soap_call_ns__get_interface_names' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_interface_names(struct soap *soap, const char *soap_endpoint, const char *soap_action, std::string *names);
-    /** Web service asynchronous operation 'soap_send_ns__get_interface_names' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__get_interface_names(struct soap *soap, const char *soap_endpoint, const char *soap_action);
-    /** Web service asynchronous operation 'soap_recv_ns__get_interface_names' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_interface_names(struct soap *soap, std::string *names);
-    
-    /** Web service synchronous operation 'soap_call_ns__get_interface_info' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_interface_info(struct soap *soap, const char *soap_endpoint, const char *soap_action, const std::string& name, std::string &info);
-    /** Web service asynchronous operation 'soap_send_ns__get_interface_info' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__get_interface_info(struct soap *soap, const char *soap_endpoint, const char *soap_action, const std::string& name);
-    /** Web service asynchronous operation 'soap_recv_ns__get_interface_info' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_interface_info(struct soap *soap, std::string &info);
-    
-    /** Web service synchronous operation 'soap_call_ns__get_interface_ip_address' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_interface_ip_address(struct soap *soap, const char *soap_endpoint, const char *soap_action, const std::string& name, std::string &ip_address);
-    /** Web service asynchronous operation 'soap_send_ns__get_interface_ip_address' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__get_interface_ip_address(struct soap *soap, const char *soap_endpoint, const char *soap_action, const std::string& name);
-    /** Web service asynchronous operation 'soap_recv_ns__get_interface_ip_address' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_interface_ip_address(struct soap *soap, std::string &ip_address);
-    
-    /** Web service synchronous operation 'soap_call_ns__get_interface_speed' to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns__get_interface_speed(struct soap *soap, const char *soap_endpoint, const char *soap_action, const std::string& name, int &speed);
-    /** Web service asynchronous operation 'soap_send_ns__get_interface_speed' to send a request message to the specified endpoint and SOAP Action header, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__get_interface_speed(struct soap *soap, const char *soap_endpoint, const char *soap_action, const std::string& name);
-    /** Web service asynchronous operation 'soap_recv_ns__get_interface_speed' to receive a response message from the connected endpoint, returns SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__get_interface_speed(struct soap *soap, int &speed);
-    /** Web service one-way asynchronous operation 'soap_send_ns__set_hostname' */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__set_hostname(struct soap *soap, const char *soap_endpoint, const char *soap_action, const std::string& hostname);
-    /** Web service one-way asynchronous operation 'soap_recv_ns__set_hostname' */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__set_hostname(struct soap *soap, struct ns__set_hostname *_param_1);
-    /** Web service one-way asynchronous operation 'soap_send_ns__set_interface_ip_address' */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_send_ns__set_interface_ip_address(struct soap *soap, const char *soap_endpoint, const char *soap_action, const std::string& name, const std::string& ip_address, const std::string& subnet_mask);
-    /** Web service one-way asynchronous operation 'soap_recv_ns__set_interface_ip_address' */
-    SOAP_FMAC5 int SOAP_FMAC6 soap_recv_ns__set_interface_ip_address(struct soap *soap, struct ns__set_interface_ip_address *_param_1);
-
-/******************************************************************************\
- *                                                                            *
- * Server-Side Operations                                                     *
- *                                                                            *
-\******************************************************************************/
-
-    /** Web service operation 'ns__get_cpu_info' implementation, should return SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 ns__get_cpu_info(struct soap*, std::string &info);
-    /** Web service operation 'ns__get_cpu_usage' implementation, should return SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 ns__get_cpu_usage(struct soap*, float &usage);
-    /** Web service operation 'ns__get_memory_info' implementation, should return SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 ns__get_memory_info(struct soap*, std::string &info);
-    /** Web service operation 'ns__get_memory_available' implementation, should return SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 ns__get_memory_available(struct soap*, int &available);
-    /** Web service operation 'ns__get_memory_free' implementation, should return SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 ns__get_memory_free(struct soap*, int &free);
-    /** Web service operation 'ns__get_drive_number' implementation, should return SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 ns__get_drive_number(struct soap*, unsigned int &number);
-    /** Web service operation 'ns__get_drive_names' implementation, should return SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 ns__get_drive_names(struct soap*, std::string *names);
-    /** Web service operation 'ns__get_drive_info' implementation, should return SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 ns__get_drive_info(struct soap*, std::string name, std::string &info);
-    /** Web service operation 'ns__get_drive_total_capacity' implementation, should return SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 ns__get_drive_total_capacity(struct soap*, std::string name, float &total);
-    /** Web service operation 'ns__get_drive_used_capatity' implementation, should return SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 ns__get_drive_used_capatity(struct soap*, std::string name, float &usage);
-    /** Web service operation 'ns__get_interface_number' implementation, should return SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 ns__get_interface_number(struct soap*, unsigned int &number);
-    /** Web service operation 'ns__get_interface_names' implementation, should return SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 ns__get_interface_names(struct soap*, std::string *names);
-    /** Web service operation 'ns__get_interface_info' implementation, should return SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 ns__get_interface_info(struct soap*, std::string name, std::string &info);
-    /** Web service operation 'ns__get_interface_ip_address' implementation, should return SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 ns__get_interface_ip_address(struct soap*, std::string name, std::string &ip_address);
-    /** Web service operation 'ns__get_interface_speed' implementation, should return SOAP_OK or error code */
-    SOAP_FMAC5 int SOAP_FMAC6 ns__get_interface_speed(struct soap*, std::string name, int &speed);
-    /** Web service one-way operation 'ns__set_hostname' implementation, should return value of soap_send_empty_response() to send HTTP Accept acknowledgment, or return an error code, or return SOAP_OK to immediately return without sending an HTTP response message */
-    SOAP_FMAC5 int SOAP_FMAC6 ns__set_hostname(struct soap*, std::string hostname);
-    /** Web service one-way operation 'ns__set_interface_ip_address' implementation, should return value of soap_send_empty_response() to send HTTP Accept acknowledgment, or return an error code, or return SOAP_OK to immediately return without sending an HTTP response message */
-    SOAP_FMAC5 int SOAP_FMAC6 ns__set_interface_ip_address(struct soap*, std::string name, std::string ip_address, std::string subnet_mask);
-
-/******************************************************************************\
- *                                                                            *
- * Server-Side Skeletons to Invoke Service Operations                         *
- *                                                                            *
-\******************************************************************************/
-
-extern "C" SOAP_FMAC5 int SOAP_FMAC6 soap_serve(struct soap*);
-
-extern "C" SOAP_FMAC5 int SOAP_FMAC6 soap_serve_request(struct soap*);
-
-SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__get_cpu_info(struct soap*);
-
-SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__get_cpu_usage(struct soap*);
-
-SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__get_memory_info(struct soap*);
-
-SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__get_memory_available(struct soap*);
-
-SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__get_memory_free(struct soap*);
-
-SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__get_drive_number(struct soap*);
-
-SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__get_drive_names(struct soap*);
-
-SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__get_drive_info(struct soap*);
-
-SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__get_drive_total_capacity(struct soap*);
-
-SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__get_drive_used_capatity(struct soap*);
-
-SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__get_interface_number(struct soap*);
-
-SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__get_interface_names(struct soap*);
-
-SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__get_interface_info(struct soap*);
-
-SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__get_interface_ip_address(struct soap*);
-
-SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__get_interface_speed(struct soap*);
-
-SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__set_hostname(struct soap*);
-
-SOAP_FMAC5 int SOAP_FMAC6 soap_serve_ns__set_interface_ip_address(struct soap*);
 
 #endif
 
