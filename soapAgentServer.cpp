@@ -300,6 +300,9 @@ int agentService::get_interface_speed(const string& name, int& speed)
 
 int agentService::set_hostname(const string& hostname)
 {
+    string command = "hostname " + hostname;
+    exec(command.c_str());
+
     return SOAP_OK;
 }
 

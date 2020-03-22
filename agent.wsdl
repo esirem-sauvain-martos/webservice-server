@@ -391,7 +391,7 @@
 <service name="agent">
   <documentation>gSOAP 2.8.98 generated service definition</documentation>
   <port name="agent" binding="tns:agent">
-    <SOAP:address location="http://localhost:80"/>
+    <SOAP:address location="http://91.166.177.209:8080"/>
   </port>
 </service>
 
